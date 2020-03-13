@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-dark navbar-expand justify-content-between">
+  <nav class="navbar navbar-dark navbar-expand justify-content-between sticky-top">
     <div class="container-fluid">
       <ul class="navbar-nav">
         <li class="nav-item text-center">
@@ -44,32 +44,34 @@
       </ul>
     </div>
   </nav>
-  <main class='row pt-5'>
+  <main class='row'>
     <aside class='col-xl-5 col-lg-5 col-md-12 col-sm-12'>
       <div class='container' id='jumbo'>
-        <h1 class="display-4 mb-5">Full stack web developer</h1>
-        <p class="lead">Ruby on Rails. React/Redux. HTML/CSS. Avid learner and lover of challenges.</p>
+        <h1 class="display-4 mb-5">Full stack <br>web developer</h1>
+        <p class="lead">Ruby on Rails. React/Redux. HTML/CSS.<br><br>Avid learner and lover of challenges.</p>
         <hr class="my-4">
         <p>Looking for new opportunities.</p>
         <a class="btn btn-light btn-lg" href="mailto:mvsmdrs@protonmail.com" role="button">Send an email</a>
       </div>
     </aside>
-    <div class='col-xl-7 col-lg-7 col-md-12 col-sm-12'>
-      <div id="carouselExampleIndicators" class="carousel slide mx-auto carousel-fade" data-ride="carousel">
+    <div id='slide-div' class='col-xl-7 col-lg-7 col-md-12 col-sm-12'>
+      <div id="carousel" class="carousel slide mx-auto carousel-fade" data-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="card">
               <img src="./src/img/battleship.png" class="card-img-top card-img" alt="...">
               <div class="card-body row">
-                <p class="card-title col-6">Battleship Game</p>
-                <div class='col-6'>
-                  <a href="https://github.com/marcos-medeiros/battleship" class="btn btn-repo">See repository<i class="fab fa-md fa-github"></i></a>
-                  <a href="https://raw.githack.com/marcos-medeiros/battleship/game-setup/dist/index.html" class="btn btn-demo">Live Demo</a>
+                <p class="card-title col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">Battleship Game</p>
+                <div class='col-7 col-sm-7 col-md-4 col-lg-4 col-xl-4'>
+                  <a href="https://github.com/marcos-medeiros/battleship" class="btn btn-slide">See repository<i class="fab fa-md fa-github"></i></a>
+                </div>
+                <div class='col-5 col-sm-5 col-md-3 col-lg-3 col-xl-3'>
+                  <a href="https://raw.githack.com/marcos-medeiros/battleship/game-setup/dist/index.html" class="btn btn-slide">Live Demo</a>
                 </div>
               </div>
             </div>
@@ -78,10 +80,12 @@
             <div class="card">
               <img src="./src/img/rails-facebook.png" class="card-img-top card-img" alt="...">
               <div class="card-body row">
-                <p class="card-title col-6">Rails Facebook Clone</p>
-                <div class='col-6'>
-                  <a href="https://github.com/marcos-medeiros/rails-facebook" class="btn btn-repo">See repository<i class="fab fa-md fa-github"></i></a>
-                  <a href="https://rails-fakebook-project.herokuapp.com" class="btn btn-demo">Live Demo</a>
+                <p class="card-title col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">Rails Facebook</p>
+                <div class='col-7 col-sm-7 col-md-4 col-lg-4 col-xl-4'>
+                  <a href="https://github.com/marcos-medeiros/rails-facebook" class="btn btn-slide">See repository<i class="fab fa-md fa-github"></i></a>
+                </div>
+                <div class='col-5 col-sm-5 col-md-3 col-lg-3 col-xl-3'>
+                  <a href="https://rails-fakebook-project.herokuapp.com" class="btn btn-slide">Live Demo</a>
                 </div>
               </div>
             </div>
@@ -90,10 +94,12 @@
             <div class="card">
               <img src="./src/img/weather-app.png" class="card-img-top card-img" alt="...">
               <div class="card-body row">
-                <p class="card-title col-6">Weather App</p>
-                <div class='col-6'>
-                  <a href="https://github.com/marcos-medeiros/weather-app" class="btn btn-repo">See repository<i class="fab fa-md fa-github"></i></a>
-                  <a href="https://marcos-medeiros.github.io/weather-app/" class="btn btn-demo">Live Demo</a>
+                <p class="card-title col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">Weather App</p>
+                <div class='col-7 col-sm-7 col-md-4 col-lg-4 col-xl-4'>
+                  <a href="https://github.com/marcos-medeiros/weather-app" class="btn btn-slide">See repository<i class="fab fa-md fa-github"></i></a>
+                </div>
+                <div class='col-5 col-sm-5 col-md-3 col-lg-3 col-xl-3'>
+                  <a href="https://marcos-medeiros.github.io/weather-app/" class="btn btn-slide">Live Demo</a>
                 </div>
               </div>
             </div>
@@ -102,7 +108,7 @@
       </div>
     </div>
   </main>
-  <footer class='container-fluid fixed-bottom'>
+  <footer class='container-fluid'>
     <div class="card-footer text-center">
       © 2020 Marcos Medeiros. Built with Bootstrap 4.
     </div>
