@@ -132,6 +132,10 @@ footer {
   .carousel-indicators {
     top: 31.5em;
   }
+
+  #weather-app-img {
+    src:'./img/weather-app-md.png' ;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -181,6 +185,10 @@ footer {
 
   .carousel-indicators {
     top: 34em;
+  }
+
+  #weather-app-img {
+    src:'./img/weather-app-sm.png' ;
   }
  
 }
