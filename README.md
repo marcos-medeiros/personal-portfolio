@@ -1,5 +1,3 @@
-# Personal Portfolio
+## Personal Portfolio
 
-This is a page that compiles my best work.
-
-[Live Version](https://marcos-medeiros.github.io/personal-portfolio)
+To access it, [click here](https://marcosmedeiros.me/).
