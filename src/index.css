@@ -73,35 +73,10 @@ a {
 .mt {
   margin-top: 1.5rem
 }
-.inline-block {
-  display: inline-block;
-  margin: 2rem;
+.m-auto {
+  margin: auto;
+  width:400px;
 }
-@media screen and (max-width: 1024px) {
-  .inline-block {
-    margin: 0.5rem
-  }
-}  
-@media screen and (max-width: 770px) {
-  .inline-block {
-    margin: 4rem
-  }
-}
-@media screen and (max-width: 414px) {
-  .inline-block {
-    margin: 1rem
-  }
-}
-@media screen and (max-width: 375px) {
-  .inline-block {
-    margin: 0.5rem
-  }
-}
-@media screen and (max-width: 360px) {
-  .inline-block {
-    margin: 0.25rem
-  }
-}  
 @media screen and (min-width: 671px) {
  .slanted,
  .bg-slanted {  

@@ -24,7 +24,7 @@ const Publication = ({ publication }) => (
           </p>
         </div>
         <div className="spacing-medium-top txt-center">
-          <a className="btn" href={publication.link}>
+          <a className="btn" href={publication.link} target="_blank" rel="noopener noreferrer">
             Read
           </a>
         </div>

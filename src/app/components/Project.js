@@ -30,15 +30,19 @@ const Project = ({ project }) => (
           ))}
         </ul>
       </div>
-      <div className="spacing-tiny-top inline-block">
-        <a className="btn" href={project.liveDemo}>
-          Live Demo
-        </a>
-      </div>
-      <div className="spacing-tiny-top inline-block">
-        <a className="btn" href={project.repository}>
-          Repository
-        </a>
+      <div className="spacing-tiny-top m-auto">
+        <ul className="site-menu__inner">
+          <li className="site-menu__item">
+            <a className="btn" href={project.liveDemo}>
+              Live Demo
+            </a>
+          </li>
+          <li className="site-menu__item">
+            <a className="btn" href={project.repository}>
+              Repository
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </article>
