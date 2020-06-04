@@ -11,6 +11,7 @@ class Nav extends React.Component {
     };
 
     this.handleClick = this.handleClick.bind(this);
+    this.handleTab = this.handleTab.bind(this);
   }
 
   handleClick() {
@@ -44,11 +45,18 @@ class Nav extends React.Component {
     }
   }
 
+  handleTab(tab = null) {
+    const {changeTab} = this.props;
+    const {handleClick} = this;
+    changeTab(tab);
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      handleClick();
+     }
+  }
+
   render() {
-    const {
-      name, github, linkedin, twitter, email, changeTab,
-    } = this.props;
-    const { handleClick } = this;
+    const { name, github, linkedin, twitter, email } = this.props;
+    const { handleClick, handleTab } = this;
 
 
     return (
@@ -56,7 +64,7 @@ class Nav extends React.Component {
         <div className="site-header__inner anim anim-down anim-fade loaded">
           <div className="site-header__section site-header__section--logo">
             {/* eslint-disable */}
-            <a className="site-logo" onClick={() => changeTab()}>
+            <a className="site-logo" onClick={() => handleTab()}>
               {name}
             </a>
           </div>
@@ -69,17 +77,17 @@ class Nav extends React.Component {
             <nav className="site-menu" id='nav'>
               <ul className="site-menu__inner">
                 <li className="site-menu__item">
-                  <a className="site-menu__link " onClick={() => changeTab('projects')}>
+                  <a className="site-menu__link " onClick={() => handleTab('projects')}>
                     Projects
 							              </a>
                 </li>
                 <li className="site-menu__item">
-                  <a className="site-menu__link " onClick={() => changeTab('publications')}>
+                  <a className="site-menu__link " onClick={() => handleTab('publications')}>
                     Publications
 							              </a>
                 </li>
                 <li className="site-menu__item">
-                  <a className="site-menu__link " onClick={() => changeTab('about')}>
+                  <a className="site-menu__link " onClick={() => handleTab('about')}>
                     About
 							              </a>
                 </li>
