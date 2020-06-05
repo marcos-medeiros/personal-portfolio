@@ -7,7 +7,7 @@ import Education from './Education';
 import Publication from './Publication';
 import changeTab from '../actions/actions';
 
-const Home = ({ featuredProject, publications }) => (
+const Home = ({ featuredProject, publications, changeTab }) => (
   <>
     <Intro />
     <section className="section section--large spacing-huge">
@@ -17,6 +17,13 @@ const Home = ({ featuredProject, publications }) => (
         </h2>
       </div>
       <Project project={featuredProject} />
+      <div className="spacing-medium-top txt-center">
+        {/* eslint-disable */}
+                <a className="btn" onClick={() => changeTab('projects')}>
+                    View More Projects
+		        </a>
+                {/* eslint-enable */}
+      </div>
     </section>
     <section className="bg-grey bg-slanted">
       <div className="section section-large spacing-huge">
@@ -72,4 +79,11 @@ const mapStateToProps = state => ({
   publications: state.data.publications.slice(0, 2),
 });
 
-export default connect(mapStateToProps, { changeTab })(Home);
+const mapDispatchToProps = dispatch => ({
+  changeTab: tab => {
+    window.scrollTo(0, 0);
+    dispatch(changeTab(tab));    
+  }
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
