@@ -72,6 +72,7 @@ Home.propTypes = {
     description: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired,
   }).isRequired).isRequired,
+  changeTab: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({
@@ -82,8 +83,8 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   changeTab: tab => {
     window.scrollTo(0, 0);
-    dispatch(changeTab(tab));    
-  }
-})
+    dispatch(changeTab(tab));
+  },
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

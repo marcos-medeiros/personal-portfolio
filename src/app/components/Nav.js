@@ -46,16 +46,18 @@ class Nav extends React.Component {
   }
 
   handleTab(tab = null) {
-    const {changeTab} = this.props;
-    const {handleClick} = this;
+    const { changeTab } = this.props;
+    const { handleClick } = this;
     changeTab(tab);
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       handleClick();
-     }
+    }
   }
 
   render() {
-    const { name, github, linkedin, twitter, email } = this.props;
+    const {
+      name, github, linkedin, twitter, email,
+    } = this.props;
     const { handleClick, handleTab } = this;
 
 
