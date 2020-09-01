@@ -4,12 +4,25 @@ const data = {
   github: 'https://github.com/marcos-medeiros',
   linkedin: 'https://www.linkedin.com/in/marcosmedeiros-dev',
   twitter: 'https://twitter.com/mrcsmedeiros',
-  email: 'mvsmdrs@protonmail.com',
+  email: 'marcosmedeiros@tuta.io',
   introTitle: 'Hey, I\'m Marcos.',
-  introDescription: 'Full-stack web developer. Remote. Ruby on Rails. React/Redux. Looking for a job and challenging opportunities.',
+  introDescription: 'Full-stack web developer. Remote. NodeJS. React/Redux. Ruby on Rails. Looking for a job and challenging opportunities.',
   introButton: 'My Projects',
   introPhotoPath: './src/profile.png',
   projects: [
+    {
+      name: 'NodeJS Facebook Clone',
+      imgPath: './src/nodefakebook.png',
+      description: 'A mimick of facebook built with NodeJS. This project has facebook\'s core features implemented: posts, friends, comments and likes. ',
+      liveDemo: 'https://nodejs-fakebook.herokuapp.com/',
+      repository: 'https://github.com/marcos-medeiros/social-media-js',
+      tools: [
+        'Node.js',
+        'React.js',
+        'TypeScript',
+        'Heroku',
+      ],
+    },
     {
       name: 'AeroTest',
       imgPath: './src/aerotest.png',
@@ -71,19 +84,6 @@ const data = {
         'Heroku',
       ],
     },
-    {
-      name: 'Calculator App',
-      imgPath: './src/calculatorapp.png',
-      description: 'A basic calculator built with React Components and deployed with Heroku.',
-      liveDemo: 'https://react-calculator-project.herokuapp.com/',
-      repository: 'https://github.com/marcos-medeiros/calculator-app',
-      tools: [
-        'JavaScript',
-        'React.js',
-        'Heroku',
-      ],
-    },
-
   ],
   education: [
     {
